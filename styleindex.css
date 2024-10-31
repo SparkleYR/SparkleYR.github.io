@@ -1,0 +1,72 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8); 
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end; 
+}
+.menu-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px; 
+    align-self: center; 
+}
+.dropdown-menu {
+   display:none; 
+   position:absolute;
+   right:10px; 
+   top:50px; 
+    
+   background-color:rgba(0 ,0 ,0 ,.8); 
+    
+   list-style-type:none ;
+   padding :0 ;
+    
+   border-radius :5 px ;
+   display :flex ;
+}
+
+.dropdown-menu li {
+   margin :0 ;
+   padding :15px 30px ;
+   background-color :rgba(255 ,255 ,255 ,0) ;
+   color :white ;
+   flex-grow :1 ;
+   text-align:center ;
+   transition :background-color .3s ease-in-out ;
+}
+.dropdown-menu li:hover{
+   background-color :rgba(255 ,255 ,255 ,.2) ;
+   cursor:pointer ;
+}
+.dropdown-menu li a{
+   color:white ;
+   text-decoration:none ;
+   font-size :18px ;
+}
+.dropdown-menu li a:hover{
+   text-decoration:none;
+}
+.container {
+   display:flex ;
+   justify-content:center ;
+   align-items:center ;
+   height :calc(100vh -120px) ;
+   margin-top :120px ;
+}
+body{background-image :url('image1.jpg');background-size :cover ;background-position :center ;background-repeat :no-repeat }
+.content{text-align:center;color:white;background-color:rgba(0,0,0,.5);padding:60px;border-radius:15px;max-width:600px}
+#typed-text{display:inline }
+.cool-button{padding :15px30px;font-size :1rem;color:white;background-color:#2242f6;border:none;border-radius :25px ;cursor:pointer ;transition :all .3s ease-in-out ;box-shadow :.2rem .4rem .8rem rgba(56, 137, 236, 0.5)}
+.cool-button:hover{background-color:#4dacff ;transform :scale(1.1)}
+#notify-form input[type=email]{padding :15px;margin-right :10px}
+#notify-form button{padding :15px}
+p{margin-bottom :30px}
